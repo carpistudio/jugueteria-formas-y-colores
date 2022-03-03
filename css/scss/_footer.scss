@@ -1,0 +1,27 @@
+footer {
+    background-color: $principal;
+    color: white;
+    padding: 15px 0;
+
+    *::selection {
+        background: $rojo;
+    }
+
+    .footer {
+
+        &__contacto {
+            font-size: 1.1rem;
+        }
+
+        &__redes {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 10px;
+            
+            i {
+                font-size: 2rem;
+            }
+        }
+    }
+}

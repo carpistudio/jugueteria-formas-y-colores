@@ -1,0 +1,52 @@
+.navbar {
+    background-color: #67b0d8;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    .navbarItems {
+        justify-content: flex-end;
+
+        .navbar-nav {
+            gap: 25px;
+        }
+
+        .nav-link {
+            position: relative;
+            color: white;
+            padding-right: 0;
+            padding-left: 0;
+
+            &:after {
+                content: '';
+                width: 0;
+                height: 3px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                transition: width .2s ease-out;
+            }
+
+            @each $nombre, $codigo in $colores {
+              &__#{$nombre} {
+                  &:after {
+                    background-color: $codigo;
+                  }
+
+                  &::selection {
+                      background-color: $codigo;
+                  }
+              }
+            }
+
+            &:hover, &.active {
+                color: white;
+
+                &:after {
+                    width: 100%;
+                }
+            }
+        }
+        
+    }
+}
