@@ -9,8 +9,18 @@ footer {
 
     .footer {
 
+        @include movil {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
         &__contacto {
             font-size: 1.1rem;
+
+            @include movil {
+                text-align: center;
+            }
         }
 
         &__redes {
@@ -18,6 +28,10 @@ footer {
             justify-content: flex-end;
             align-items: center;
             gap: 10px;
+
+            @include movil {
+                justify-content: center;
+            }
             
             i {
                 font-size: 2rem;
