@@ -383,6 +383,7 @@ footer *::selection {
 
 footer .footer__contacto {
   font-size: 1.1rem;
+  color: white;
 }
 
 @media screen and (max-width: 576px) {
