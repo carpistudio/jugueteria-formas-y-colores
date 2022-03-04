@@ -424,9 +424,9 @@ footer .footer__redes {
   }
 }
 
-footer .footer__redes i {
+footer .footer__redes a {
   color: white;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .botonesGrandes {
