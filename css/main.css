@@ -849,7 +849,7 @@ footer .footer__redes a {
 }
 
 @media screen and (max-width: 576px) {
-  p {
+  p.contacto__texto {
     margin-bottom: 50px;
   }
 }
