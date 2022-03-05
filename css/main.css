@@ -830,7 +830,7 @@ footer .footer__redes a {
 
 .container__maps iframe {
   overflow: hidden;
-  border-radius: 10%;
+  border-radius: 30px;
 }
 
 .vertical__Align {
@@ -842,10 +842,32 @@ footer .footer__redes a {
           align-items: center;
 }
 
+.contacto__descripcion h4 {
+  font-family: "Nunito", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.contacto__descripcion p.contacto__juguetesTexto {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
 .contacto__descripcion p {
   font-family: "Nunito", sans-serif;
   font-size: 1.4em;
   font-weight: 600;
+}
+
+@media screen and (max-width: 576px) {
+  .contacto__imagen {
+    margin-bottom: 30px;
+  }
+}
+
+.contacto__imagen img {
+  max-width: 100%;
+  border-radius: 30px;
 }
 
 @media screen and (max-width: 576px) {
@@ -865,7 +887,7 @@ footer .footer__redes a {
 }
 
 .container__local img {
-  border-radius: 10%;
+  border-radius: 30px;
   width: 355px;
   height: auto;
 }

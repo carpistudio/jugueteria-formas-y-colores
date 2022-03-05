@@ -49,7 +49,7 @@
 .container__maps {
   iframe {
     overflow: hidden;
-    border-radius: 10%;
+    border-radius: 30px;
   }
 }
 
@@ -59,11 +59,34 @@
 }
 
 .contacto__descripcion {
+  h4 {
+    font-family: $fontNunito;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  p.contacto__juguetesTexto {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
   p {
     font-family: $fontNunito;
     font-size: 1.4em;
     font-weight: 600;
   }
+}
+
+.contacto__imagen {
+
+  @include movil {
+    margin-bottom: 30px;
+  }
+
+    img {
+      max-width: 100%;
+      border-radius: 30px;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -81,7 +104,7 @@
 .container__local {
   margin-bottom: 50px;
   img {
-    border-radius: 10%;
+    border-radius: 30px;
     width: 355px;
     height: auto;
   }
